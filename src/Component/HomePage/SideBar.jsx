@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { filterByType } from "../../features/filter/filterSlice";
+import { editActive } from "../../features/job/jobSlice";
 
 const SideBar = () => {
   // const [type, setType] = useState("");
@@ -59,7 +60,12 @@ const SideBar = () => {
             </ul>
           </li>
           <li>
-            <Link to="/jobs" className="main-menu" id="lws-addJob-menu">
+            <Link
+              to="/jobs"
+              onClick={() => dispatch(editActive("Add Job"))}
+              className="main-menu"
+              id="lws-addJob-menu"
+            >
               <i className="fa-solid fa-file-circle-plus"></i>{" "}
               <span>Add NewJob</span>
             </Link>

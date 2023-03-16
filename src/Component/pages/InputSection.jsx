@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import {
   createJob,
+  editActive,
   editInactive,
   editJob,
   fetchJobs,
@@ -57,6 +58,7 @@ const InputSection = () => {
       })
     );
     reset();
+    dispatch(editActive({}));
   };
 
   const handleUpdate = (e) => {
