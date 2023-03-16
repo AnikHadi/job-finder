@@ -75,8 +75,11 @@ const InputSection = () => {
     reset();
     dispatch(editInactive());
     setEditMode(false);
-    navigate("/");
   };
+
+  useEffect(() => {
+    if (Object.keys(editing).length === 0) navigate("/");
+  }, [editing, navigate]);
 
   return (
     <div>

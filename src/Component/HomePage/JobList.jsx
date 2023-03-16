@@ -4,18 +4,20 @@ import { fetchJobs } from "../../features/job/jobSlice";
 import SingleJob from "./SingleJob";
 
 const JobList = () => {
-  const { jobs, isLoading, isError, error } = useSelector(
+  const { jobs, isLoading, isError, error, editing } = useSelector(
     (state) => state.jobs
   );
-  const { filterBySalary, filterByType, filterBySearch, editing } = useSelector(
+  const { filterBySalary, filterByType, filterBySearch } = useSelector(
     (state) => state.filters
   );
   console.log(editing);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchJobs());
-  }, [dispatch]);
+    if (Object.keys(editing).length === 0) {
+      dispatch(fetchJobs());
+    }
+  }, [dispatch, editing]);
 
   // all filter section
   const typeByFilter = (job) => {

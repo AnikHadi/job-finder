@@ -24,44 +24,30 @@
     {
       "title": "Social Media Manager",
       "type": "Internship",
-      "salary": "20000",
-      "deadline": "2022-11-31",
+      "salary": 2,
+      "deadline": "2023-03-15",
       "id": 5
     },
     {
       "title": "Android App Developer",
       "type": "Remote",
-      "salary": "35000",
+      "salary": 35,
       "deadline": "2022-12-31",
       "id": 6
     },
     {
       "title": "Full Stack Developer",
-      "type": "Remote",
-      "salary": 18000,
+      "type": "Internship",
+      "salary": 18,
       "deadline": "2022-12-31",
       "id": 7
     },
     {
-      "title": "Software Developer",
-      "type": "Internship",
-      "salary": 5000,
-      "deadline": "2023-04-07",
+      "title": "Frontend Developer",
+      "type": "Full Time",
+      "salary": 85,
+      "deadline": "2023-03-23",
       "id": 8
-    },
-    {
-      "title": "Product Manager",
-      "type": "Full Time",
-      "salary": 80000,
-      "deadline": "2023-04-21",
-      "id": 9
-    },
-    {
-      "title": "IOS App Developer",
-      "type": "Full Time",
-      "salary": 7100,
-      "deadline": "2023-03-09",
-      "id": 10
     }
   ]
 }
